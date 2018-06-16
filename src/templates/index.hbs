@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{meta.description}}"/>
+    <meta name="keywords" content="{{meta.keywords}}"/>
+    <title>{{ meta.title }}</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+    <section class="main">
+        {{> cloud style=3 }}
+        {{> cloud style=1 }}
+        {{> cloud style=2 }}
+        {{> cloud style=4 }}
+        {{> cloud style=1 }}
+        {{> cloud style=2 }}
+        {{> cloud style=3 }}
+        {{> cloud style=4 }}
+        {{> cloud style=2 }}
+        {{> cloud style=3 }}
+        {{> cloud style=1 }}
+        {{> cloud style=2 }}
+        <div class="logo">
+            <div>
+                <img src="/assets/images/logo.png" alt="{{ meta.title }}">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

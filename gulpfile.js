@@ -37,5 +37,9 @@ gulpStatic({
         input: './src/scripts/index.js',
         output: './dist/assets/scripts/',
         watch: './src/scripts/**/*',
-    }
+    },
+    move: [{
+        input: './src/static/*',
+        output: './dist'
+    }]
 });

@@ -19,6 +19,6 @@
   "homepage": "https://github.com/getdumont/getdumont.github.io#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-static-gen": "^1.0.1"
+    "gulp-static-gen": "^1.0.2"
   }
 }

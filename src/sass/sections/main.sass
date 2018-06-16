@@ -1,32 +1,18 @@
+@import 'variables/colors'
 @import 'elements/clouds'
 @import 'animations/clouds'
 @import 'animations/heartbeat'
 
 .main
-    background: #005999
+    background: $blue
     position: relative
-    align-items: stretch
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    min-height: 100vh
 
-    .logo
-        align-items: center
-        display: flex
-        flex-grow: 1
-        flex-shrink: 0
-
-        div
-            flex-grow: 1
-            flex-shrink: 1
-
-            img
-                display: block
-                width: 80%
-                max-width: 900px
-                margin: 0 auto
-                animation: heartbeat 2s infinite
+    img
+        display: block
+        width: 80%
+        max-width: 900px
+        margin: 0 auto
+        animation: heartbeat 2s infinite
 
     .cloud
         right: -20%

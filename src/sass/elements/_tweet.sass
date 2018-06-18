@@ -1,0 +1,54 @@
+body
+  background: #f1f1f1
+
+.tweet
+  background: #fff
+  border-radius: 10px
+  margin: 10px auto
+  width: 500px
+  padding: 20px
+
+  &:after
+    content: " "
+    display: block
+    clear: both
+
+  & > .img, & > .info
+    float: left
+
+  & > .info
+    width: calc(100% - 70px)
+
+  & > .img
+    background: #000
+    width: 50px
+    height: 50px
+    border-radius: 50%
+
+  & > .info
+    padding: 0 10px
+
+    & > .nickname, & > .username
+      display: block
+      float: left
+
+    & > .nickname
+      background: #000
+      height: 10px
+      width: 55px
+
+    & > .username
+      background: #000
+      height: 8px
+      width: 40px
+      margin-top: 2px
+      margin-left: 10px
+
+    & > .content
+      margin-top: 20px
+
+      & > div
+        width: 100%
+        background: #000
+        height: 8px
+        margin: 5px 0 0 0

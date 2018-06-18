@@ -1,0 +1,48 @@
+.steper
+    display: flex
+    flex-grow: 1
+    position: relative
+
+    &:after
+        content: " "
+        width: 70%
+        position: absolute
+        height: 10px
+        background: $grey-light
+        margin-left: 15%
+        top: 20px
+        z-index: 1
+
+    .step
+        flex-grow: 1
+        flex-basis: 0
+        position: relative
+        z-index: 3
+        cursor: pointer
+
+        & > .number
+            margin: 0 auto
+            width: 50px
+            line-height: 50px
+            text-align: center
+            font-size: 20px
+            font-weight: 600
+            background: $grey-light
+            border-radius: 50%
+
+        & > .text
+            width: 35%
+            margin: 10px auto
+            text-align: center
+            font-size: 12px
+            opacity: 0.7
+            font-weight: 300
+
+        &.active
+            & > .number
+                background: $blue
+                color: $white
+
+            & > .text
+                opacity: 1
+                font-weight: 500

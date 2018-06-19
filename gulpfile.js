@@ -20,6 +20,7 @@ gulpStatic({
     },
     hbs: {
         batch : ['./src/templates/partials'],
+        helpers: require('./src/templates/helpers'),
         watch : './src/templates/**/*',
         multiple: Object.keys(data).map(templateInfo)
     },

@@ -1,6 +1,29 @@
 @import 'elements/steper'
 @import 'elements/tweet'
+@import 'elements/frame'
 
 .how
+    box-sizing: border-box
     background: $white
     padding: 50px
+
+    .hero-content
+        flex-direction: column
+
+    .steper, .how-animation
+
+        width: 100%
+
+    .how-animation
+        display: flex
+        flex-grow: 1
+        width: 70%
+        margin: 0 auto
+
+        & > .animation
+            flex-grow: 1
+
+        & > .text
+            flex-grow: 1
+            max-width: 45%
+            padding-left: 50px

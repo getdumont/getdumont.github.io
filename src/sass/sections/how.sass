@@ -2,23 +2,29 @@
 @import 'elements/tweet'
 @import 'elements/frame'
 
+=active-step()
+    & > .number
+        background: $blue
+        color: $white
+
+    & > .text
+        opacity: 1
+        font-weight: 500
+
 .how
     box-sizing: border-box
     background: $white
     padding: 50px
 
-    .hero-content
-        flex-direction: column
-
     .steper, .how-animation
-
         width: 100%
 
     .how-animation
         display: flex
         flex-grow: 1
         width: 70%
-        margin: 0 auto
+        margin: 40px auto
+        display: none
 
         & > .animation
             flex-grow: 1
@@ -27,3 +33,28 @@
             flex-grow: 1
             max-width: 45%
             padding-left: 50px
+
+    .hero-content
+        flex-direction: column
+
+        &.slide-1, &.slide-2, &.slide-3
+            & > .steper > .step:nth-child(1)
+                +active-step()
+
+        &.slide-2, &.slide-3
+            & > .steper > .step:nth-child(2)
+                +active-step()
+
+        &.slide-3 > .steper > .step:nth-child(3)
+            +active-step()
+
+        &.slide-2 > .steper:before
+            width: 35%
+
+        &.slide-3 > .steper:before
+            width: 70%
+
+        &.slide-1 > .how-animation.ha-1,
+        &.slide-2 > .how-animation.ha-2,
+        &.slide-3 > .how-animation.ha-3
+            display: flex

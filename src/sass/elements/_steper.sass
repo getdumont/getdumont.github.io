@@ -3,15 +3,23 @@
     flex-grow: 1
     position: relative
 
-    &:after
+    &:after, &:before
         content: " "
-        width: 70%
         position: absolute
-        height: 10px
-        background: $grey-light
         margin-left: 15%
         top: 20px
+        height: 10px
+
+    &:after
+        width: 70%
+        background: $grey-light
         z-index: 1
+
+    &:before
+        width: 0%
+        background: $blue
+        z-index: 2
+
 
     .step
         flex-grow: 1
@@ -37,12 +45,3 @@
             font-size: 12px
             opacity: 0.7
             font-weight: 300
-
-        &.active
-            & > .number
-                background: $blue
-                color: $white
-
-            & > .text
-                opacity: 1
-                font-weight: 500

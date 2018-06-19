@@ -2,7 +2,7 @@ const Handlebars = require('handlebars');
 
 module.exports = function (options) {
     return new Handlebars.SafeString(`
-        <div class="how-animation">
+        <div class="how-animation ha-${options.hash.id}">
             <div class="animation">
                 ${options.fn(this)}
             </div>

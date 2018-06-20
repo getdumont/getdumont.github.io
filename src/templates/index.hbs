@@ -106,6 +106,24 @@
             {{/animation-slide}}
         </div>
     </section>
+    <footer class="footer">
+        <div class="content">
+            <div class="logo">
+                <img src="/assets/images/logo_blue.png" alt="{{meta.title_max}}">
+            </div>
+            <div>
+                <h4>Social</h4>
+                {{#footer-list links=footer.social_links}}{{/footer-list}}
+            </div>
+            <div>
+                <h4>Relacionados</h4>
+                {{#footer-list links=footer.related_links}}{{/footer-list}}
+            </div>
+        </div>
+        <div class="copyright">
+            {{ meta.copyrights }}
+        </div>
+    </footer>
     <script src="/assets/scripts/index.js"></script>
 </body>
 </html>

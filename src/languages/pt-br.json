@@ -4,7 +4,8 @@
         "title_short": "Dumont - Melhorando a saúde mental no Brasil",
         "title_max": "Ajudar Compartilhando! Estamos melhorando a saúde mental de homens e mulheres no Brasil",
         "keywords": "saúde mental, saúde, psicologia, psicólogo, auto-ajuda, brasil, depressão, estresse, ansiedade",
-        "description": "Projeto Social dedicado à saúde mental. Criado de uma pesquisa sobre depressão, ansiedade e estresse, seu foco é aumentar visibilidade do assunto no Brasil."
+        "description": "Projeto Social dedicado à saúde mental. Criado de uma pesquisa sobre depressão, ansiedade e estresse, seu foco é aumentar visibilidade do assunto no Brasil.",
+        "copyrights": "O único direito não é reservado e sim o direito de um saúde mental melhor. Faça parte do projeto!"
     },
     "session_one": {
         "title": "Você Sabia?",
@@ -47,6 +48,29 @@
         },{
             "title": "Processamento e Predição",
             "text": "No final será processado e utilizado todos os dados coletados até agora para que seja possível que o 14BIS (link pro 14 BIS), nosso programa responsável pela Inteligência Artificial, seja capaz de atribuir uma EADS ao perfil e por final caracterizá-los devidamente. Uma vez feito isso, toda a nova base, ou seja, os dados resultados. Serão compactados e expostos para que outros profissionais utilizem em suas pesquisas envolvendo saúde mental."
+        }]
+    },
+    "footer": {
+        "social_links": [{
+            "label": "GitHub",
+            "uri": "https://github.com/getdumont"
+        },{
+            "label": "Facebook",
+            "uri": "https://www.facebook.com/projetodumont"
+        },{
+            "label": "fale@getdumont.com",
+            "uri": "fale@getdumont.com",
+            "type": "email"
+        }],
+        "related_links": [{
+            "label": "CVV",
+            "uri": "https://www.cvv.org.br/"
+        },{
+            "label": "OMS",
+            "uri": "http://www.who.int/eportuguese/countries/bra/pt/"
+        },{
+            "label": "ISMA",
+            "uri": "http://www.ismabrasil.com.br/"
         }]
     }
 }

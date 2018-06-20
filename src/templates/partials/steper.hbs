@@ -1,14 +1,8 @@
 <div class="steper">
-    <div class="step">
-        <div class="number">1</div>
-        <div class="text">Coleta de Tweets</div>
-    </div>
-    <div class="step">
-        <div class="number">2</div>
-        <div class="text">Dados Especialistas</div>
-    </div>
-    <div class="step">
-        <div class="number">3</div>
-        <div class="text">Processamento e Predição</div>
-    </div>
+    {{#each session_four.articles }}
+        <div class="step">
+            <div class="number">{{#inc n=1}}{{@index}}{{/inc}}</div>
+            <div class="text">{{ title }}</div>
+        </div>
+    {{/each}}
 </div>

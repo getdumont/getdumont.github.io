@@ -8,7 +8,7 @@ function addClickOnStep(about, button, index) {
 }
 
 window.onload = function () {
-    const about = document.querySelector('#sobre .hero-content');
+    const about = document.querySelector('#como-funciona .hero-content');
     const buttons = document.querySelectorAll('.steper .step');
 
     for (let index in Object.keys(buttons)) {

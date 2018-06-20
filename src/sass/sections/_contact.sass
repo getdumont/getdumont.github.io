@@ -1,0 +1,54 @@
+.contact
+    background: $red
+    padding: 30px
+
+    & > div
+        width: 70%
+        margin: 0 auto
+
+        &:after
+            content: " "
+            clear: both
+            display: block
+
+        & > *
+            float: left
+
+        & > form
+            box-sizing: border-box
+            width: 50%
+            padding: 15px 10px 0
+
+            & > input
+                border: 2px solid $grey
+                color: $black
+                font-family: Lato,Helvetica,Arial,sans-serif
+                font-size: 15px
+                line-height: 1.467
+                padding: 0px 12px
+                height: 42px
+                border-radius: 5px
+                width: 65%
+
+            & > button
+                width: 25%
+                line-height: 39px
+                border: 2px solid #fff
+                background: transparent
+                color: #fff
+                border-radius: 5px
+                vertical-align: top
+                font-weight: 600
+                cursor: pointer
+                font-size: 14px
+                transition: .5s ease
+
+                &:hover
+                    color: $red
+                    background: $white
+                    transition: .5s ease
+
+        & > p
+            width: 50%
+            color: $white
+            font-size: 12px

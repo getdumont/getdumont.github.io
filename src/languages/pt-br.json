@@ -30,5 +30,10 @@
             "title": "Pesquisa",
             "text": "A  idéia da pesquisa é caracterizar (ou seja dividir em grupos a partir de características) as dimensões afetivas negativas citadas em perfis do twitter, para isso dados do twitter estão sendo coletados e tratados por inteligência artificial a fim de gerar novos dados de seu resultado para futuras pesquisas na área de psicologia."
         }]
+    },
+    "session_three": {
+        "seo": "Nos ajude a mudar a saúde mental do Brasil.",
+        "text": "Estudante de psicologia no terceiro ano (ou superior), psicólogo formado ou tem qualquer formação que faça-o ser apto a analisar sentido e sentimentos em textos? Entre em contato e saiba como pode ajudar!",
+        "placeholder": "Informe seu e-mail!"
     }
 }

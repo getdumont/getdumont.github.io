@@ -69,6 +69,16 @@
             </article>
         {{/each}}
     </section>
+    <section class="contact" id="participe">
+        <h2 class="hide">{{ session_three.seo }} </h2>
+        <div>
+            <p>{{ session_three.text }}</p>
+            <form action="">
+                <input type="email" placeholder="{{ session_three.placeholder }}" name="email" />
+                <button type="submit">Participar!</button>
+            </form>
+        </div>
+    </section>
     <section class="how hero" id="como-funciona">
         <div class="hero-content slide-1">
             {{> steper }}

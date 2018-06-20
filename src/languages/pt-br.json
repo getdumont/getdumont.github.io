@@ -1,8 +1,34 @@
 {
     "meta": {
         "lang": "pt-br",
-        "title": "Dumont - Predizendo Afetividade Negativa em Perfis do Twitter",
-        "keywords": "",
-        "description": ""
+        "title_short": "Dumont - Melhorando a saúde mental no Brasil",
+        "title_max": "Ajudar Compartilhando! Estamos melhorando a saúde mental de homens e mulheres no Brasil",
+        "keywords": "saúde mental, saúde, psicologia, psicólogo, auto-ajuda, brasil, depressão, estresse, ansiedade",
+        "description": "Projeto Social dedicado à saúde mental. Criado de uma pesquisa sobre depressão, ansiedade e estresse, seu foco é aumentar visibilidade do assunto no Brasil."
+    },
+    "session_one": {
+        "title": "Você Sabia?",
+        "seo": "Dados sobre saúde mental",
+        "articles": [{
+            "title": "Depressão",
+            "text": "De acordo com a Organização Mundial de Saúde, mais de 11 milhões de brasileiros sofrem hoje de depressão. Esse número é o equivalente a quase 6% da população nacional total."
+        }, {
+            "title": "Ansiedade",
+            "text": "De acordo com a Organização Mundial de Saúde, quase 10% da população brasileira sofre de ansiedade, e pesquisas apontam que ela é a maior causa de suicídio entre estudantes."
+        }, {
+            "title": "Estresse",
+            "text": "Desde de 2012 o Brasil está entre os primeiros países com o povo que mais sofre stress também. A pesquisa foi apresentada pelo Associação Internacional do Controle do Estresse"
+        }]
+    },
+    "session_two": {
+        "title": "O que é o Dumont?",
+        "seo": "Sobre o projeto Dumont.",
+        "articles": [{
+            "title": "Projeto Social",
+            "text": "Quando problemas como colesterol, diabetes ou pressão alta/baixa é normal o nosso pensamento \"Vou ao médico\". Esse pensamento muda quando falamos sobre depressão, ansiedade e estresse. Nosso projeto social tem como seu foco conversar sobre o assunto com os brasileiros e incentivar a população cuidar da saúde mental."
+        }, {
+            "title": "Pesquisa",
+            "text": "A  idéia da pesquisa é caracterizar (ou seja dividir em grupos a partir de características) as dimensões afetivas negativas citadas em perfis do twitter, para isso dados do twitter estão sendo coletados e tratados por inteligência artificial a fim de gerar novos dados de seu resultado para futuras pesquisas na área de psicologia."
+        }]
     }
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="{{meta.description}}"/>
     <meta name="keywords" content="{{meta.keywords}}"/>
-    <title>{{ meta.title }}</title>
+    <title>{{ meta.title_short }}</title>
     <link rel="stylesheet" href="/assets/css/index.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/apple-icon-57x57.png">
@@ -28,7 +28,9 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+    <h1>{{ meta.title_short }}</h1>
     <section class="hero main">
+        <h2 class="hide">{{ meta.title_max }}</h2>
         {{> cloud style=3 }}
         {{> cloud style=1 }}
         {{> cloud style=2 }}
@@ -42,35 +44,32 @@
         {{> cloud style=1 }}
         {{> cloud style=2 }}
         <div class="hero-content">
-            <img src="/assets/images/logo.png" alt="{{ meta.title }}">
+            <img src="/assets/images/logo.png" alt="{{ meta.description }}">
         </div>
     </section>
-    <section class="about">
-        <h2>Você sabia?</h2>
+    <section class="data" id="dados-saude-mental">
+        <div class="title">{{ session_one.title }}</div>
+        <h2 class="hide">{{ session_one.seo }}</h2>
         <div class="hero-content">
-            <div class="card">
-                <h2>11 milhões</h2>
-                <p>
-                    É o número estimado, pela OMS, de Brasileiros com depressão
-                </p>
-            </div>
-            <div class="card">
-                <h2>
-                    20 milhões
-                </h2>
-                <p>
-                    É o número estimado de Brasileiros interagindo no Twitter
-                </p>
-            </div>
-            <div class="card">
-                <h2>8 vezes</h2>
-                <p>
-                    Representa o aumento nas vendas após implementar uma IA
-                </p>
-            </div>
+            {{#each session_one.articles}}
+                <article class="card">
+                    <h3>{{title}}</h3>
+                    <p>{{{ text }}}</p>
+                </article>
+            {{/each}}
         </div>
     </section>
-    <section class="how hero" id="sobre">
+    <section class="about" id="sobre">
+        <div class="title">{{ session_two.title }}</div>
+        <h2 class="hide">{{ session_two.seo }}</h2>
+        {{#each session_two.articles}}
+            <article>
+                <h3>{{ title }}</h3>
+                <p>{{{ text }}}</p>
+            </article>
+        {{/each}}
+    </section>
+    <section class="how hero" id="como-funciona">
         <div class="hero-content slide-1">
             {{> steper }}
             {{#animation-slide

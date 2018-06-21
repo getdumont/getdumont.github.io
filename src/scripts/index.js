@@ -24,4 +24,13 @@ window.onload = function () {
         span.parentNode.appendChild(img);
         span.parentNode.removeChild(span);
     }
+
+    const myCSS = document.createElement('link');
+    myCSS.rel = "stylesheet";
+    myCSS.href = "/assets/css/index.css";
+
+    document.head.insertBefore( myCSS, document.head.childNodes[ document.head.childNodes.length - 1 ].nextSibling );
+    setTimeout(() => {
+        document.body.removeChild(document.getElementById('placeholder-loading'));
+    }, 100);
 }

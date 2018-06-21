@@ -7,7 +7,6 @@
     <meta name="description" content="{{meta.description}}"/>
     <meta name="keywords" content="{{meta.keywords}}"/>
     <title>{{ meta.title_short }}</title>
-    <link rel="stylesheet" href="/assets/css/index.css" media="nope!" onload="this.media='all'">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/icons/apple-icon-60x60.png">
@@ -42,8 +41,20 @@
     <meta name="twitter:creator" content="Dumont">
     <meta name="twitter:image:src" content="https://getdumont.com/assets/images/banner.png">
     <meta name="twitter:domain" content="getdumont.com">
+    <style>
+        #placeholder-loading {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #005999;
+            z-index: 5;
+        }
+    </style>
 </head>
 <body>
+    <div id="placeholder-loading"></div>
     <h1>{{ meta.title_short }}</h1>
     <section class="hero main">
         <h2 class="hide">{{ meta.title_max }}</h2>

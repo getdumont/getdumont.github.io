@@ -21,6 +21,6 @@ module.exports = function (options) {
     return new Handlebars.SafeString(`
         <ul class="list">
            ${list(items)}
-        <ul>
+        </ul>
     `);
 }

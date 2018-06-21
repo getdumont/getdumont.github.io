@@ -41,13 +41,13 @@
         "seo": "Como o Dumont funcionará?",
         "articles": [{
             "title": "Coletar Tweets",
-            "text": "É necessário que psicólogos tenham acesso a textos publicados por um usuário dentro do Twitter (adicionar link pro twitter) para que seja possível analisar o perfil, para isso Dumont coleta diariamente uma leva de perfis e tweets para análise de profissionais, é importante destacar que nosso foco são os atributos do perfil e não nomes, logo o usuário é <strong> totalmente anônimo </strong> seu usuário fica encriptado em uma base privada com para que seja possível futuramente contatarmos pessoas que se interessaram em ajudar-nos na pesquisa."
+            "text": "É necessário que psicólogos tenham acesso a textos publicados por um usuário dentro do <a href=\"https://twitter.com/\">Twitter</a> para que seja possível analisar o perfil, para isso Dumont coleta diariamente uma leva de perfis e tweets para análise de profissionais, é importante destacar que nosso foco são os atributos do perfil e não nomes, logo o usuário é <strong> totalmente anônimo </strong> seu usuário fica encriptado em uma base privada com para que seja possível futuramente contatarmos pessoas que se interessaram em ajudar-nos na pesquisa."
         },{
             "title": "O que dizem os especialistas?",
-            "text": "Uma vez com os dados em mão, os especialistas (e estudantes), irão fornecer seu conhecimento preenchendo perguntas relacionadas a cada Tweet. Fazendo isso a base coletada fica cada vez mais rica e com maior número de atributos para serem analisados. Uma grande diferença de pesquisas tradicionais é o uso das perguntas da Escala de Ansiedade, Depressão e Estresse (EADS) (adicionar link para pesquisa sobre eads) como atributo."
+            "text": "Uma vez com os dados em mão, os especialistas (e estudantes), irão fornecer seu conhecimento preenchendo perguntas relacionadas a cada Tweet. Fazendo isso a base coletada fica cada vez mais rica e com maior número de atributos para serem analisados. Uma grande diferença de pesquisas tradicionais é o uso das perguntas da <strong>Escala de Ansiedade, Depressão e Estresse (EADS)</strong> como atributo."
         },{
             "title": "Processamento e Predição",
-            "text": "No final será processado e utilizado todos os dados coletados até agora para que seja possível que o 14BIS (link pro 14 BIS), nosso programa responsável pela Inteligência Artificial, seja capaz de atribuir uma EADS ao perfil e por final caracterizá-los devidamente. Uma vez feito isso, toda a nova base, ou seja, os dados resultados. Serão compactados e expostos para que outros profissionais utilizem em suas pesquisas envolvendo saúde mental."
+            "text": "No final será processado e utilizado todos os dados coletados até agora para que seja possível que o <a href=\"https://github.com/getdumont/14bis\"><strong>14BIS</strong></a>, nosso programa responsável pela Inteligência Artificial, seja capaz de atribuir uma <strong>EADS</strong> ao perfil e por final caracterizá-los devidamente. Uma vez feito isso, toda a nova base, ou seja, os dados resultados. Serão compactados e expostos para que outros profissionais utilizem em suas pesquisas envolvendo saúde mental."
         }]
     },
     "footer": {

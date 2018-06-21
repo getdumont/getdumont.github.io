@@ -7,7 +7,7 @@
     <meta name="description" content="{{meta.description}}"/>
     <meta name="keywords" content="{{meta.keywords}}"/>
     <title>{{ meta.title_short }}</title>
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css" media="nope!" onload="this.media='all'">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/icons/apple-icon-60x60.png">
@@ -60,7 +60,7 @@
         {{> cloud style=1 }}
         {{> cloud style=2 }}
         <div class="hero-content">
-            <img src="/assets/images/logo.png" alt="{{ meta.description }}">
+            <span data-img="/assets/images/logo.png" data-alt="{{ meta.description }}"></span>
         </div>
     </section>
     <section class="data" id="dados-saude-mental">
@@ -128,7 +128,7 @@
     <footer class="footer">
         <div class="content">
             <div class="logo">
-                <img src="/assets/images/logo_blue.png" alt="{{meta.title_max}}">
+                <span data-img="/assets/images/logo_blue.png" data-alt="{{ meta.title_max }}"></span>
             </div>
             <div>
                 <h4>Social</h4>

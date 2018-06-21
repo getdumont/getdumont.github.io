@@ -1,3 +1,5 @@
+'use strict';
+
 var cacheName = 'DUMONT_CACHE';
 var cacheFiles = [
     '/manifest.json',
@@ -13,4 +15,8 @@ self.addEventListener('install', function(event) {
     event.waitUntil(caches.open(cacheName).then(function(cache) {
         return cache.addAll(cacheFiles);
     }));
+});
+
+self.addEventListener('fetch', function(event) {
+    event.respondWith(caches.match(event.request));
 });

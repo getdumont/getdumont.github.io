@@ -1,8 +1,10 @@
 {
  "name": "Projeto Dumont",
  "short_name": "dumont",
- "start_url": "https://getdumont.com",
+ "start_url": "https://getdumont.com/",
+ "display": "fullscreen",
  "theme_color": "#005999",
+ "background_color": "#005999",
  "icons": [
   {
    "src": "\/assets\/images\/android-icon-36x36.png",

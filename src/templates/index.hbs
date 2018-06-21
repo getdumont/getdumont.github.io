@@ -99,6 +99,7 @@
         <h2 class="hide">{{ session_four.seo }}</h2>
         <div class="hero-content slide-1">
             {{> steper }}
+            <span class="mtitle">{{ session_four.articles.0.title }} </span>
             {{#animation-slide
                 id=1
                 text=session_four.articles.0.text}}
@@ -106,6 +107,7 @@
                     Slide 1
                 {{/frame}}
             {{/animation-slide}}
+            <span class="mtitle">{{ session_four.articles.1.title }} </span>
             {{#animation-slide
                 id=2
                 text=session_four.articles.1.text}}
@@ -113,6 +115,7 @@
                     Slide 2
                 {{/frame}}
             {{/animation-slide}}
+            <span class="mtitle">{{ session_four.articles.2.title }} </span>
             {{#animation-slide
                 id=3
                 text=session_four.articles.2.text}}

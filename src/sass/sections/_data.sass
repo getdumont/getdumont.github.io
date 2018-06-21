@@ -2,10 +2,22 @@
 
 .data
     background: $grey-light
-    padding: 50px
+    padding: 20px
+
+    @media screen and (min-width: 850px)
+        padding: 50px
 
     & > .title
         text-align: center
         font-size: 40px
         margin: 0 0 40px
         color: $grey-dark
+
+    & > .hero-content
+        width: 100%
+        max-width: 1024px
+        margin: 0 auto
+        flex-direction: column
+
+        @media screen and (min-width: 850px)
+            flex-direction: row

@@ -16,23 +16,45 @@
     background: $white
     padding: 50px
 
+    .mtitle
+        display: none
+
+    @media screen and (max-width: 850px)
+        min-height: auto
+        padding: 20px
+
+        .mtitle
+            display: block
+            text-align: center;
+            font-size: 26px;
+            margin: 20px 0 20px;
+            color: #757575;
+
     .steper, .how-animation
         width: 100%
 
     .how-animation
-        display: flex
-        flex-grow: 1
-        width: 70%
-        margin: 40px auto
-        display: none
+        margin: 20px auto
 
         & > .animation
-            flex-grow: 1
+            display: none
 
-        & > .text
+        @media screen and (min-width: 850px)
+            display: flex
             flex-grow: 1
-            max-width: 45%
-            padding-left: 50px
+            width: 100%
+            max-width: 1024px
+            display: none
+            margin: 40px auto
+
+            & > .animation
+                display: block
+                flex-grow: 1
+
+            & > .text
+                flex-grow: 1
+                max-width: 45%
+                padding-left: 50px
 
     .hero-content
         flex-direction: column

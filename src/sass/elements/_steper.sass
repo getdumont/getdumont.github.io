@@ -1,47 +1,50 @@
 .steper
-    display: flex
-    flex-grow: 1
-    position: relative
+    display: none
 
-    &:after, &:before
-        content: " "
-        position: absolute
-        margin-left: 15%
-        top: 20px
-        height: 10px
-
-    &:after
-        width: 70%
-        background: $grey-light
-        z-index: 1
-
-    &:before
-        width: 0%
-        background: $blue
-        z-index: 2
-
-
-    .step
+    @media screen and (min-width: 850px)
+        display: flex
         flex-grow: 1
-        flex-basis: 0
         position: relative
-        z-index: 3
-        cursor: pointer
 
-        & > .number
-            margin: 0 auto
-            width: 50px
-            line-height: 50px
-            text-align: center
-            font-size: 20px
-            font-weight: 600
+        &:after, &:before
+            content: " "
+            position: absolute
+            margin-left: 15%
+            top: 20px
+            height: 10px
+
+        &:after
+            width: 70%
             background: $grey-light
-            border-radius: 50%
+            z-index: 1
 
-        & > .text
-            width: 35%
-            margin: 10px auto
-            text-align: center
-            font-size: 12px
-            opacity: 0.7
-            font-weight: 300
+        &:before
+            width: 0%
+            background: $blue
+            z-index: 2
+
+
+        .step
+            flex-grow: 1
+            flex-basis: 0
+            position: relative
+            z-index: 3
+            cursor: pointer
+
+            & > .number
+                margin: 0 auto
+                width: 50px
+                line-height: 50px
+                text-align: center
+                font-size: 20px
+                font-weight: 600
+                background: $grey-light
+                border-radius: 50%
+
+            & > .text
+                width: 35%
+                margin: 10px auto
+                text-align: center
+                font-size: 12px
+                opacity: 0.7
+                font-weight: 300

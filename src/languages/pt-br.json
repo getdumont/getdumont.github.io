@@ -12,13 +12,22 @@
         "seo": "Dados sobre saúde mental",
         "articles": [{
             "title": "Depressão",
-            "text": "De acordo com a Organização Mundial de Saúde, mais de 11 milhões de brasileiros sofrem hoje de depressão. Esse número é o equivalente a quase 6% da população nacional total."
+            "text": "De acordo com a Organização Mundial de Saúde, mais de 11 milhões de brasileiros sofrem hoje de depressão. Esse número é o equivalente a quase 6% da população nacional total.",
+            "links": [
+                {"uri": "https://www.paho.org/bra/index.php?option=com_content&view=article&id=5391:tema-do-dia-mundial-da-saude-de-2017-depressao-e-debatida-por-especialistas-em-evento-na-opas-oms&Itemid=839", "text": "Por: O.M.S."}
+            ]
         }, {
             "title": "Ansiedade",
-            "text": "De acordo com a Organização Mundial de Saúde, quase 10% da população brasileira sofre de ansiedade, e pesquisas apontam que ela é a maior causa de suicídio entre estudantes."
+            "text": "De acordo com a Organização Mundial de Saúde, quase 10% da população brasileira sofre de ansiedade, e pesquisas apontam que ela é a maior causa de suicídio entre estudantes.",
+            "links": [
+                {"uri": "https://saude.estadao.com.br/noticias/geral,brasil-tem-maior-taxa-de-transtorno-de-ansiedade-do-mundo-diz-oms,70001677247", "text": "Por: Estadão"}
+            ]
         }, {
             "title": "Estresse",
-            "text": "Desde de 2012 o Brasil está entre os primeiros países com o povo que mais sofre stress também. A pesquisa foi apresentada pelo Associação Internacional do Controle do Estresse"
+            "text": "Desde de 2012 o Brasil está entre os primeiros países com o povo que mais sofre stress também. A pesquisa foi apresentada pelo Associação Internacional do Controle do Estresse",
+            "links": [
+                {"uri": "http://www.ismabrasil.com.br/", "text": "ISMA-BR"}
+            ]
         }]
     },
     "session_two": {

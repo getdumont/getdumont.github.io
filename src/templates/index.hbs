@@ -82,6 +82,9 @@
                 <article class="card">
                     <h3>{{title}}</h3>
                     <p>{{{ text }}}</p>
+                    {{#each links}}
+                        <a href="{{uri}}">{{text}}</a>
+                    {{/each}}
                 </article>
             {{/each}}
         </div>

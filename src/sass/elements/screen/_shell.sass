@@ -1,0 +1,25 @@
+@import 'animations/shell.sass'
+
+.shell-screen
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    width: 100%
+    background: #4b4b4b
+
+    & > .inner
+        position: relative
+        top: 100%
+        box-sizing: border-box
+        padding: 0 20px
+        animation: shell-run 10s infinite
+
+        & > div
+            height: 8px
+            background: rgba(255, 255, 255, 0.1)
+            margin-bottom: 10px
+
+        @for $i from 1 through 10
+            .l-#{$i}0
+                width: $i * 10%

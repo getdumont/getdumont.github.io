@@ -17,10 +17,10 @@ function addClickOnStep(about, button, index) {
 
 function nextSlide(about, index) {
     slideTimeout = setTimeout(() => {
-        let nextIndex = index == 2 ? 0 : index + 1;
+        index = index > 2 ? 0 : index;
         activeSlide(about, index);
-        nextSlide(about, nextIndex);
-    }, 19000);
+        nextSlide(about, index + 1);
+    }, 18000);
 }
 
 window.onload = function () {
@@ -36,7 +36,7 @@ window.onload = function () {
     }
 
 
-    nextSlide(about, 0);
+    nextSlide(about, 1);
 
 
     /**

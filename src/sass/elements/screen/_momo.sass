@@ -1,0 +1,99 @@
+
+=row()
+    content: " "
+    clear: both
+    display: block
+
+.momo-screen
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    width: 100%
+    background: #dfe6e9
+
+    .header
+        background: #00cec9
+        height: 25px
+        width: 100%
+
+    .ask
+        padding: 10px 0
+        width: 95%
+        margin: 0 auto
+        border-bottom: 1px solid rgba(120, 120, 120, 0.2)
+
+        .title
+            height: 6px
+            width: 20%
+            margin-bottom: 5px
+            background: rgba(120, 120, 120, 0.6)
+
+        .count
+            height: 4px
+            width: 15%
+            background: rgba(120, 120, 120, 0.2)
+
+    .ask-form
+        border: none
+
+        &:after
+            +row()
+
+        & > *
+            float: left
+
+        .select
+            width: calc(45% - 10px)
+            margin-right: 10px
+            border: 1px solid rgba(120, 120, 120, 0.2)
+            border-radius: 5px
+            padding: 8px
+
+        .check
+            box-sizing: border-box
+            width: calc(35% - 20px)
+            padding: 5px 0px
+            display: flex
+            align-items: center
+            justify-content: center
+
+            & > div
+                float: left
+                width: 5px
+                height: 5px
+                margin-right: 5px
+                border: 1px solid rgba(120, 120, 120, 0.2)
+                border-radius: 50%
+
+                &.active
+                    border-color: #dfe6e9
+                    background: #dfe6e9
+
+        .submit
+            width: calc(10% - 5px)
+            margin-left: 5px
+            background: #00cec9
+            border-radius: 5px
+            padding: 10px
+
+    .container
+        padding: 25px 20px 0
+
+        & > .row
+            &:after
+                +row()
+
+            & > *
+                float: left
+                min-height: 100px
+                background: #fff
+                border-radius: 5px
+
+                &:nth-child(1)
+                    width: 40%
+
+                &:nth-child(2)
+                    box-sizing: border-box
+                    margin-left: 20px
+                    width: calc(60% - 20px)

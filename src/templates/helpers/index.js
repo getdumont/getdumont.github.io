@@ -3,4 +3,5 @@ module.exports = {
     'animation-slide': require('./animation-slide'),
     'footer-list': require('./footer-list'),
     'inc': require('./increase'),
+    'check': require('./check'),
 }

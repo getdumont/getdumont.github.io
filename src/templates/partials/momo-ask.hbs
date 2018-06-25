@@ -1,0 +1,10 @@
+<div class="ask {{#if isForm}}ask-form{{/if}}">
+    {{#if isForm}}
+        <div class="select"></div>
+        {{#check selected=selected}}{{/check}}
+        <div class="submit"></div>
+    {{else}}
+        <div class="title"></div>
+        <div class="count"></div>
+    {{/if}}
+</div>

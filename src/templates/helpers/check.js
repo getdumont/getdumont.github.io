@@ -1,14 +1,18 @@
 const Handlebars = require('handlebars');
 
-const list = (selected) => {
+const list = () => {
     let l = '';
 
     for(var i = 0; i < 4; i++) {
         l += '<div';
 
-        if (selected == i) {
-            l += ' class="active"'
-        };
+        if (i == 0) {
+            l += ' class="active-1"';
+        }
+
+        if (i == 2) {
+            l += ' class="active-2"';
+        }
 
         l += '></div>\n';
     }
@@ -19,7 +23,7 @@ const list = (selected) => {
 module.exports = function (options) {
     return new Handlebars.SafeString(`
         <div class="check">
-            ${list(options.hash.selected)}
+            ${list()}
         </div>
     `);
 }

@@ -1,3 +1,4 @@
+@import "animations/momo"
 
 =row()
     content: " "
@@ -66,10 +67,6 @@
                 border: 1px solid rgba(120, 120, 120, 0.2)
                 border-radius: 50%
 
-                &.active
-                    border-color: #dfe6e9
-                    background: #dfe6e9
-
         .submit
             width: calc(10% - 5px)
             margin-left: 5px
@@ -97,3 +94,20 @@
                     box-sizing: border-box
                     margin-left: 20px
                     width: calc(60% - 20px)
+
+                    .ask:nth-child(3)
+                        opacity: 0
+                        max-height: 0
+                        padding: 0
+                        animation: open-ask 15s infinite
+
+                    .ask-form
+                        .active-1
+                            background: #dfe6e9
+                            animation: check-1-appear 15s infinite
+                        .active-2
+                            background: transparent
+                            animation: check-2-appear 15s infinite
+                        .submit
+                            opacity: 1
+                            animation: button-click 15s infinite

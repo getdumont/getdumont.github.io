@@ -1,4 +1,5 @@
 @import 'elements/tweet'
+@import 'animations/tweet'
 
 .twitter-screen
     position: absolute
@@ -26,6 +27,13 @@
             &:nth-child(2)
                 width: 45%
                 margin: 0 2.5%
+
+                .tweet:nth-child(even)
+                    animation: tweets 8s infinite
+
+                .tweet:nth-child(odd)
+                    animation: tweets 8s infinite
+                    animation-delay: 4s
 
             & > .block
                 width: 100%

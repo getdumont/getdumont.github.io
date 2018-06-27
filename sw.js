@@ -18,5 +18,7 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-    event.respondWith(caches.match(event.request));
+    if (~request.url.indexOf('/assets') || ~request.url.indexOf('fonts.gstatic')) {
+        event.respondWith(caches.match(event.request));
+    }
 });

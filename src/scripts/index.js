@@ -61,4 +61,20 @@ window.onload = function () {
     setTimeout(() => {
         document.body.removeChild(document.getElementById('placeholder-loading'));
     }, 100);
+
+    /**
+     * SEND EMAIL
+     */
+    const form = document.getElementById('email-form');
+    form.onsubmit = function (e) {
+        e.preventDefault();
+
+        const http = new XMLHttpRequest();
+        http.open('POST', 'https://api.mailgun.net/v3/{{MG_DOMAIN}}/messages', true);
+        http.setRequestHeader('Authorization', "Basic " + btoa("api:key-{{MG_API_KEY}}"));
+        http.onload = function() {
+            console.log(this.responseText);
+        };
+        http.send('from=Test <fale@getdumont.com>&to=guilherme@getdumont.com&subject=OOOOOO&text=Vai da boa');
+    }
 }

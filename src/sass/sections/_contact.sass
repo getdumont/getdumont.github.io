@@ -1,3 +1,5 @@
+@import 'animations/dots'
+
 .contact
     background: $red
     padding: 30px
@@ -19,6 +21,18 @@
                 display: block;
                 font-size: 26px;
                 color: $white;
+        &.error-block
+            background: #ffb0b0
+            color: #b22324
+            text-align: center
+            line-height: 30px
+            font-size: 14px
+            display: none
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            max-width: none;
 
         &.inserted
             width: 100%
@@ -36,8 +50,24 @@
                     width: 50%
 
             & > form
+                position: relative
                 box-sizing: border-box
                 padding: 15px 0
+
+                &.loading:after
+                    content: "."
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    background: #b22324
+                    opacity: 0.9
+                    text-align: center
+                    line-height: 40px
+                    font-size: 40px
+                    color: #FFF
+                    animation: dots 3s infinite
 
                 @media screen and (min-width: 850px)
                     padding: 15px 10px 0
@@ -53,6 +83,10 @@
                     padding: 0px 12px
                     height: 42px
                     border-radius: 5px
+
+                    &:focus
+                        outline: none
+                        border: 2px solid #ffb0b0
 
                     @media screen and (min-width: 500px)
                         width: 75%
@@ -75,9 +109,17 @@
                         margin-top: 0
                         width: 23%
 
-                    // @media screen and (min-width: 500px)
+                    &:focus
+                        outline: none
 
                     &:hover
                         color: $red
                         background: $white
                         transition: .5s ease
+
+    &.error
+        padding-top: 50px
+        position: relative
+
+        .error-block
+            display: block

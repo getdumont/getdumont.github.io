@@ -101,11 +101,12 @@
     </section>
     <section class="contact" id="participe">
         <h2 class="hide">{{ session_three.seo }} </h2>
+        <div class="error-block">{{session_three.error}}</div>
         {{#is-pt lang=meta.lang}}
             <div class="inserted">
                 <p>{{ session_three.text }}</p>
                 <form id="email-form" action="/">
-                    <input type="email" placeholder="{{ session_three.placeholder }}" name="email" />
+                    <input type="email" required autocomplete="off" placeholder="{{ session_three.placeholder }}" name="email" />
                     <button type="submit">Participar!</button>
                 </form>
             </div>

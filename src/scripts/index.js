@@ -77,16 +77,23 @@ window.onload = function () {
      * SEND EMAIL
      */
     const form = document.getElementById('email-form');
+    const contact = document.getElementById('participe');
 
     form.onsubmit = function (e) {
         e.preventDefault();
+        form.classList.add('loading');
         const email = form.querySelector('input').value;
         const http = new XMLHttpRequest();
-        http.open('POST', 'https://mailgun.getdumont.com/' + email, true);
-        http.onload = function() {
-            console.log(this.responseText);
+        http.open('POST', `https://mailgun.getdumont.com/${email}/`, true);
+        http.onreadystatechange = function () {
+            if (this.status === 200) {
+                contact.classList.remove('error');
+                setThanks(email);
+            } else {
+                form.classList.remove('loading');
+                contact.classList.add('error');
+            }
         };
-        http.send('');
-        setThanks(email);
+        http.send();
     }
 }

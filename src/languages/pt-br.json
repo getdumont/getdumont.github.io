@@ -44,7 +44,8 @@
     "session_three": {
         "seo": "Nos ajude a mudar a saúde mental do Brasil.",
         "text": "Estudante de psicologia no terceiro ano (ou superior), psicólogo formado ou tem qualquer formação que faça-o ser apto a analisar sentido e sentimentos em textos? Entre em contato e saiba como pode ajudar!",
-        "placeholder": "Informe seu e-mail!"
+        "placeholder": "Informe seu e-mail!",
+        "error": "Algum problema aconteceu, tente novamente mais tarde!"
     },
     "session_four": {
         "seo": "Como o Dumont funcionará?",

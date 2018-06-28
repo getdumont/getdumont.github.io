@@ -7,8 +7,7 @@ var cacheFiles = [
     '/assets/images/logo.png',
     '/assets/images/logo_blue.png',
     '/assets/scripts/index.js',
-    'https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhpKKSTjw.woff2',
-    'https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2',
+    'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700',
 ];
 
 self.addEventListener('install', function(event) {
@@ -18,7 +17,8 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-    if (~request.url.indexOf('/assets') || ~request.url.indexOf('fonts.gstatic')) {
+    const request = event.request;
+    if (~request.url.indexOf('/assets') || ~request.url.indexOf('fonts.')) {
         event.respondWith(caches.match(event.request));
     }
 });

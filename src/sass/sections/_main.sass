@@ -1,11 +1,37 @@
 @import 'variables/colors'
 @import 'elements/clouds'
+@import 'elements/flags'
 @import 'animations/clouds'
 @import 'animations/heartbeat'
 
 .main
     background: $blue
     position: relative
+
+    ul
+        list-style: none
+        padding: 4px 5px
+        z-index: 4
+        background: rgba(255, 255, 255, 0.5)
+        margin: 0
+
+        @media screen and (min-width: 500px)
+            padding: 0
+            background: transparent
+            position: absolute
+            right: 15px
+            top: 15px
+
+        li
+            float: left
+            margin-left: 10px
+
+            a
+                display: block
+                opacity: .4
+
+                &.active
+                    opacity: 1
 
     img
         display: block

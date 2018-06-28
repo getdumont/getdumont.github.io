@@ -1,0 +1,70 @@
+.flag
+  width: 50px
+  height: 30px
+  position: relative
+
+.flag::after, .flag::before
+  content: " "
+  position: absolute
+  top: 0
+
+
+.pt-br
+  background: #4cd137
+
+
+.pt-br::after
+    width: 0
+    height: 0
+    border-top: 15px solid transparent
+    border-left: 25px solid #fbc531
+    border-bottom: 15px solid transparent
+    right: 0
+
+
+.pt-br::before
+    width: 0
+    height: 0
+    border-top: 15px solid transparent
+    border-right: 25px solid #fbc531
+    border-bottom: 15px solid transparent
+
+
+.es
+  background: #e84118
+
+
+.es::after
+  background: #fbc531
+  width: 100%
+  height: 16px
+  position: absolute
+  top: 7px
+
+
+.en
+  background: #f5f6fa
+
+
+.en::after
+  width: 15px
+  height: 15px
+  background: #273c75
+  z-index: 2
+
+
+.en::before
+  width: 50px
+  height: 5px
+  border-top: 5px solid #e84118
+  border-bottom: 5px solid #e84118
+  background: #f5f6fa
+
+
+.en > span
+  display: block
+  position: absolute
+  bottom: 5px
+  width: 100%
+  height: 5px
+  background: #e84118

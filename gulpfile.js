@@ -4,7 +4,13 @@ const data = require('./src/languages');
 const DEFAULT_LANG = 'pt-br';
 
 const templateInfo = lang => ({
-    data: data[lang],
+    data: Object.assign({}, data[lang], {
+        languages: {
+            'pt-br': '/',
+            'es': '/es',
+            'en': '/en'
+        }
+    }),
     input: './src/templates/index.hbs',
     output: {
         dir: './dist',

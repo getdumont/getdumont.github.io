@@ -1,0 +1,9 @@
+<ul>
+    {{#each languages}}
+        <li>
+            <a href="{{this}}" class="flag {{@key}} {{#equal v1=@key v2=../meta.lang}}active{{/equal}}">
+                <span></span>
+            </a>
+        </li>
+    {{/each}}
+</ul>

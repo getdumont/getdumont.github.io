@@ -3,10 +3,33 @@
 @import 'elements/flags'
 @import 'animations/clouds'
 @import 'animations/heartbeat'
+@import 'animations/godown'
 
 .main
     background: $blue
     position: relative
+
+    .godown
+        display: block
+        position: absolute
+        bottom: 50px
+        color: #FFF;
+        line-height: 50px
+        text-align: center
+        width: 50px
+        border: 2px solid #FFF
+        left: calc(50% - 51px)
+        border-radius: 50%
+        z-index: 4
+        background: #005999
+
+        & > span
+            position: relative
+            top: 0px
+            animation: ping 2s infinite
+
+        &:hover
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4)
 
     ul
         list-style: none

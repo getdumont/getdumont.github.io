@@ -1,6 +1,3 @@
-const fs = require('fs');
-const gulp = require('gulp');
-const replace = require('gulp-replace');
 const gulpStatic = require('gulp-static-gen');
 const data = require('./src/languages');
 
@@ -46,18 +43,4 @@ gulpStatic({
         input: './src/static/*',
         output: './dist'
     }]
-});
-
-gulp.task('keys', function () {
-    const emailTemplate =
-        fs.readFileSync('./email.html', 'utf8')
-            .replace(/"/g, '\\"')
-            .replace(/\n|\t/g, '')
-            .replace(/ *\</g, '<');
-
-    gulp.src('dist/assets/scripts/index.js')
-        .pipe(replace('{{MG_API_KEY}}', process.env.MG_API_KEY))
-        .pipe(replace('{{MG_DOMAIN}}', process.env.MG_DOMAIN))
-        .pipe(replace('{{EMAIL_TEMPLATE}}', emailTemplate))
-        .pipe(gulp.dest('dist/assets/scripts'));
 });

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "gulp serve",
-    "build": "gulp build && gulp keys"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,5 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-static-gen": "^1.0.2"
-  },
-  "devDependencies": {
-    "gulp-replace": "^1.0.0"
   }
 }

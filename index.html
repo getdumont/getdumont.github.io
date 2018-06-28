@@ -155,13 +155,18 @@
     </section>
     <section class="contact" id="participe">
         <h2 class="hide">Nos ajude a mudar a saúde mental do Brasil. </h2>
-        <div>
-            <p>Estudante de psicologia no terceiro ano (ou superior), psicólogo formado ou tem qualquer formação que faça-o ser apto a analisar sentido e sentimentos em textos? Entre em contato e saiba como pode ajudar!</p>
-            <form id="email-form" action="/">
-                <input type="email" placeholder="Informe seu e-mail!" name="email" />
-                <button type="submit">Participar!</button>
-            </form>
-        </div>
+        <div class="error-block">Algum problema aconteceu, tente novamente mais tarde!</div>
+            <div class="inserted">
+                <p>Estudante de psicologia no terceiro ano (ou superior), psicólogo formado ou tem qualquer formação que faça-o ser apto a analisar sentido e sentimentos em textos? Entre em contato e saiba como pode ajudar!</p>
+                <form id="email-form" action="/">
+                    <input type="email" required autocomplete="off" placeholder="Informe seu e-mail!" name="email" />
+                    <button type="submit">Participar!</button>
+                </form>
+            </div>
+            <div class="thanks hide">
+                <p>Obrigado por contribuir com o projeto! Enviamos um e-mail para:</p>
+                <span>test@test.com</span>
+            </div>
     </section>
     <section class="how hero" id="como-funciona">
         <h2 class="hide">Como o Dumont funcionará?</h2>
@@ -271,7 +276,7 @@
     
             </div>
             <div class="text">
-                É necessário que psicólogos tenham acesso a textos publicados por um usuário dentro do <a href="https://twitter.com/">Twitter</a> para que seja possível analisar o perfil, para isso Dumont coleta diariamente uma leva de perfis e tweets para análise de profissionais, é importante destacar que nosso foco são os atributos do perfil e não nomes, logo o usuário é <strong> totalmente anônimo </strong> seu usuário fica encriptado em uma base privada com para que seja possível futuramente contatarmos pessoas que se interessaram em ajudar-nos na pesquisa.
+                É necessário que psicólogos tenham acesso a textos publicados por um usuário dentro do <a href="https://twitter.com/">Twitter</a> para que seja possível analisar o perfil, para isso Dumont coleta diariamente uma leva de perfis e tweets para análise de profissionais, é importante destacar que nosso foco são os atributos do perfil e não nomes, logo o usuário é <strong> totalmente anônimo </strong> seu usuário fica encriptado em uma base privada para que seja possível futuramente contatarmos pessoas que se interessaram em ajudar-nos na pesquisa.
             </div>
         </div>
                 <span class="mtitle">O que dizem os especialistas? </span>

@@ -34,7 +34,18 @@ function setThanks(email) {
     }
 }
 
+const sendEmail = (email) => new Promise((resolve, reject) => {
+    const url = `https://mailgun.getdumont.com/${email}/`;
+    const http = new XMLHttpRequest();
+
+    http.open('POST', url, true);
+    http.addEventListener('load', resolve);
+    http.addEventListener('error', reject);
+    http.send();
+});
+
 window.onload = function () {
+    const EMAIL_KEY = 'DUMONT_EMAIL_SENT';
     /**
      * SLIDE
      */
@@ -73,6 +84,14 @@ window.onload = function () {
         document.body.removeChild(document.getElementById('placeholder-loading'));
     }, 100);
 
+    if ('localStorage' in window) {
+        const email = localStorage.getItem(EMAIL_KEY);
+
+        if (email) {
+            setThanks(email);
+        }
+    }
+
     /**
      * SEND EMAIL
      */
@@ -83,17 +102,16 @@ window.onload = function () {
         e.preventDefault();
         form.classList.add('loading');
         const email = form.querySelector('input').value;
-        const http = new XMLHttpRequest();
-        http.open('POST', `https://mailgun.getdumont.com/${email}/`, true);
-        http.onreadystatechange = function () {
-            if (this.status === 200) {
-                contact.classList.remove('error');
-                setThanks(email);
-            } else {
-                form.classList.remove('loading');
-                contact.classList.add('error');
+
+        sendEmail(email).then(() => {
+            contact.classList.remove('error');
+            setThanks(email);
+            if ('localStorage' in window) {
+                localStorage.setItem(EMAIL_KEY, email);
             }
-        };
-        http.send();
+        }).catch(() => {
+            form.classList.remove('loading');
+            contact.classList.add('error');
+        });
     }
 }

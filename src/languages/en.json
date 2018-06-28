@@ -1,8 +1,77 @@
 {
     "meta": {
-        "lang": "pt-br",
-        "title": "Dumont - Predict Negative Affetive on Twitter Profiles",
-        "keywords": "",
-        "description": ""
+        "lang": "en",
+        "title_short": "Dumont - Improving mental health in Brazil",
+        "title_max": "Helping by Sharing! We are improving the mental health of men and women in Brazil",
+        "keywords": "mental health, health, psychology, psychologist, self help, brazil, depression, stress, anxiety",
+        "description": "Social Project dedicated to mental health. Originated a research on depression, anxiety, and stress, its focus is to increase the visibility of the subject in Brazil.",
+        "copyrights": "The only right is not reserved, but the right to better mental health."
+    },
+    "session_one": {
+        "title": "Do you know?",
+        "seo": "Data about Mental Health on Brazil",
+        "articles": [{
+            "title": "Depressions",
+            "text": "Based on World Health Organization's research more than 11 billions of Brazilians suffer depression nowadays. That number is equivalent to 6% of all national population.",
+            "links": [
+                {"uri": "https://www.paho.org/bra/index.php?option=com_content&view=article&id=5391:tema-do-dia-mundial-da-saude-de-2017-depressao-e-debatida-por-especialistas-em-evento-na-opas-oms&Itemid=839", "text": "By: W.H.O."}
+            ]
+        }, {
+            "title": "Anxiety",
+            "text": "Based on World Health Organization's research about 10% of Brazilians suffer anxiety. When we talk about suicide, anxiety is one of the core reasons.",
+            "links": [
+                {"uri": "https://saude.estadao.com.br/noticias/geral,brasil-tem-maior-taxa-de-transtorno-de-ansiedade-do-mundo-diz-oms,70001677247", "text": "By: Estadão"}
+            ]
+        }, {
+            "title": "Stress",
+            "text": "Since 2012, Brazil is one of the first countries in stress ranking. That research was a publication by the International Stress Management Association",
+            "links": [
+                {"uri": "http://www.ismabrasil.com.br/", "text": "By: ISMA-BR"}
+            ]
+        }]
+    },
+    "session_two": {
+        "title": "What is Dumont?",
+        "seo": "About the project Dumont",
+        "articles": [{
+            "title": "Social Project",
+            "text": "When people have problems like cholesterol, diabetes, high or low pressure it's normal that our first thinking was \"I go to a Doctor\". That thinking changes when the topics are depression, anxiety or stress. Our social project's objective is to talk with people (mainly in Brazil) about that topics and encourage the population to care about your mental health."
+        }, {
+            "title": "Research",
+            "text": "The research idea is to characterize (divide into groups from a feature) the negative affective dimensions in Twitter profiles, we're collecting and processing with Artificial Intelligence data from Twitter with the objective of generating nice datasets to be used by Psychology areas."
+        }]
+    },
+    "session_four": {
+        "seo": "How Dumont works?",
+        "articles": [{
+            "title": "Collecting Tweets",
+            "text": "It's necessary that our psychologists having access to texts published by any user inside <a href=\"https://twitter.com/\">Twitter</a> to be possible analyze the profile, everyday Dumont collect some Twitter's profiles based on filters and their last tweets and send them to professional analyze. It's important to emphasize that our focus is on profile attributes not names, so, the user is <strong> totally anonymous </strong> your user will be encrypted in one private dataset to send inbox information in the future."
+        },{
+            "title": "What do the specialists say?",
+            "text": "Once that we collect data, the specialists (and area students), will give us some of your knowledge when they filling some questions related to the tweet. With this information in our dataset, we will have a more rich dataset for our research. One of the differentials here is the usage of <strong>Depression, Anxiety and Stress Scale (DASS)</strong> as a feature."
+        },{
+            "title": "Processing and Predicting",
+            "text": "In the end, we will process the data using all features that we mining until now, our artificial intelligence program <a href=\"https://github.com/getdumont/14bis\"><strong>14BIS</strong></a>, will be able to get the features and infer a DASS into a profile. Once that DASS feature be created into our document, it will be used to characterize the profiles. All data will be compacted and export to other professional create new programs and researches."
+        }]
+    },
+    "footer": {
+        "social_links": [{
+            "label": "GitHub",
+            "uri": "https://github.com/getdumont"
+        },{
+            "label": "Facebook",
+            "uri": "https://www.facebook.com/projetodumont"
+        },{
+            "label": "contact@getdumont.com",
+            "uri": "contact@getdumont.com",
+            "type": "email"
+        }],
+        "related_links": [{
+            "label": "WHO",
+            "uri": "http://www.who.int/"
+        },{
+            "label": "AIS",
+            "uri": "https://www.stress.org/"
+        }]
     }
 }

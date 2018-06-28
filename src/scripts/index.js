@@ -23,6 +23,17 @@ function nextSlide(about, index) {
     }, 18000);
 }
 
+function setThanks(email) {
+    const thanks = document.querySelector('.thanks');
+    const inserted = document.querySelector('.inserted');
+
+    if (inserted) {
+        thanks.querySelector('span').textContent = email;
+        thanks.classList.remove('hide');
+        inserted.classList.add('hide');
+    }
+}
+
 window.onload = function () {
     /**
      * SLIDE
@@ -66,15 +77,16 @@ window.onload = function () {
      * SEND EMAIL
      */
     const form = document.getElementById('email-form');
+
     form.onsubmit = function (e) {
         e.preventDefault();
-
+        const email = form.querySelector('input').value;
         const http = new XMLHttpRequest();
-        http.open('POST', 'https://api.mailgun.net/v3/{{MG_DOMAIN}}/messages', true);
-        http.setRequestHeader('Authorization', "Basic " + btoa("api:key-{{MG_API_KEY}}"));
+        http.open('POST', 'https://mailgun.getdumont.com/' + email, true);
         http.onload = function() {
             console.log(this.responseText);
         };
-        http.send('from=Test <fale@getdumont.com>&to=guilherme@getdumont.com&subject=OOOOOO&text=Vai da boa');
+        http.send('');
+        setThanks(email);
     }
 }

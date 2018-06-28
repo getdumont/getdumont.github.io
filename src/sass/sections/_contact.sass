@@ -7,63 +7,77 @@
         max-width: 1024px
         margin: 0 auto
 
-        &:after
-            content: " "
-            clear: both
-            display: block
-
-        & > *
-            @media screen and (min-width: 850px)
-                float: left
-                width: 50%
-
-        & > form
-            box-sizing: border-box
-            padding: 15px 0
-
-            @media screen and (min-width: 850px)
-                padding: 15px 10px 0
-
-            & > input
-                width: 100%
-                box-sizing: border-box
-                border: 2px solid $grey
-                color: $black
-                font-family: Lato,Helvetica,Arial,sans-serif
-                font-size: 15px
-                line-height: 1.467
-                padding: 0px 12px
-                height: 42px
-                border-radius: 5px
-
-                @media screen and (min-width: 500px)
-                    width: 75%
-
-            & > button
-                width: 100%
-                line-height: 35px
-                border: 2px solid #fff
-                background: transparent
-                color: #fff
-                border-radius: 5px
-                vertical-align: top
-                font-weight: 600
-                cursor: pointer
-                font-size: 14px
-                transition: .5s ease
-                margin-top: 15px
-
-                @media screen and (min-width: 500px)
-                    margin-top: 0
-                    width: 23%
-
-                // @media screen and (min-width: 500px)
-
-                &:hover
-                    color: $red
-                    background: $white
-                    transition: .5s ease
-
         & > p
             color: $white
             font-size: 12px
+
+        &.hide
+            display: none
+
+        &.thanks
+            & > span
+                display: block;
+                font-size: 26px;
+                color: $white;
+
+        &.inserted
+            width: 100%
+            max-width: 1024px
+            margin: 0 auto
+
+            &:after
+                content: " "
+                clear: both
+                display: block
+
+            & > *
+                @media screen and (min-width: 850px)
+                    float: left
+                    width: 50%
+
+            & > form
+                box-sizing: border-box
+                padding: 15px 0
+
+                @media screen and (min-width: 850px)
+                    padding: 15px 10px 0
+
+                & > input
+                    width: 100%
+                    box-sizing: border-box
+                    border: 2px solid $grey
+                    color: $black
+                    font-family: Lato,Helvetica,Arial,sans-serif
+                    font-size: 15px
+                    line-height: 1.467
+                    padding: 0px 12px
+                    height: 42px
+                    border-radius: 5px
+
+                    @media screen and (min-width: 500px)
+                        width: 75%
+
+                & > button
+                    width: 100%
+                    line-height: 35px
+                    border: 2px solid #fff
+                    background: transparent
+                    color: #fff
+                    border-radius: 5px
+                    vertical-align: top
+                    font-weight: 600
+                    cursor: pointer
+                    font-size: 14px
+                    transition: .5s ease
+                    margin-top: 15px
+
+                    @media screen and (min-width: 500px)
+                        margin-top: 0
+                        width: 23%
+
+                    // @media screen and (min-width: 500px)
+
+                    &:hover
+                        color: $red
+                        background: $white
+                        transition: .5s ease

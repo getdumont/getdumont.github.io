@@ -4,4 +4,5 @@ module.exports = {
     'footer-list': require('./footer-list'),
     'inc': require('./increase'),
     'check': require('./check'),
+    'is-pt': require('./is-pt')
 }

@@ -101,13 +101,19 @@
     </section>
     <section class="contact" id="participe">
         <h2 class="hide">{{ session_three.seo }} </h2>
-        <div>
-            <p>{{ session_three.text }}</p>
-            <form id="email-form" action="/">
-                <input type="email" placeholder="{{ session_three.placeholder }}" name="email" />
-                <button type="submit">Participar!</button>
-            </form>
-        </div>
+        {{#is-pt lang=meta.lang}}
+            <div class="inserted">
+                <p>{{ session_three.text }}</p>
+                <form id="email-form" action="/">
+                    <input type="email" placeholder="{{ session_three.placeholder }}" name="email" />
+                    <button type="submit">Participar!</button>
+                </form>
+            </div>
+            <div class="thanks hide">
+                <p>Obrigado por contribuir com o projeto! Enviamos um e-mail para:</p>
+                <span>test@test.com</span>
+            </div>
+        {{/is-pt}}
     </section>
     <section class="how hero" id="como-funciona">
         <h2 class="hide">{{ session_four.seo }}</h2>

@@ -50,7 +50,7 @@
         "seo": "Como o Dumont funcionará?",
         "articles": [{
             "title": "Coletar Tweets",
-            "text": "É necessário que psicólogos tenham acesso a textos publicados por um usuário dentro do <a href=\"https://twitter.com/\">Twitter</a> para que seja possível analisar o perfil, para isso Dumont coleta diariamente uma leva de perfis e tweets para análise de profissionais, é importante destacar que nosso foco são os atributos do perfil e não nomes, logo o usuário é <strong> totalmente anônimo </strong> seu usuário fica encriptado em uma base privada para que seja possível futuramente contatarmos pessoas que se interessaram em ajudar-nos na pesquisa."
+            "text": "É necessário que psicólogos tenham acesso a textos publicados por um usuário dentro do <a href=\"https://twitter.com/\">Twitter</a> para que seja possível analisar o perfil, para isso Dumont coleta diariamente uma leva de perfis e tweets para análise de profissionais, é importante destacar que nosso foco são os atributos do perfil e não nomes, logo o usuário é <strong> totalmente anônimo </strong> seu usuário fica encriptado em uma base privada com para que seja possível futuramente contatarmos pessoas que se interessaram em ajudar-nos na pesquisa."
         },{
             "title": "O que dizem os especialistas?",
             "text": "Uma vez com os dados em mão, os especialistas (e estudantes), irão fornecer seu conhecimento preenchendo perguntas relacionadas a cada Tweet. Fazendo isso a base coletada fica cada vez mais rica e com maior número de atributos para serem analisados. Uma grande diferença de pesquisas tradicionais é o uso das perguntas da <strong>Escala de Ansiedade, Depressão e Estresse (EADS)</strong> como atributo."

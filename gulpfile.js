@@ -11,7 +11,7 @@ const templateInfo = lang => ({
     input: './src/templates/index.hbs',
     output: {
         dir: './dist',
-        name: `index${DEFAULT_LANG === lang ? "" : "-" + lang}.html`,
+        name: `${DEFAULT_LANG === lang ? "" : lang}/index.html`,
     }
 });
 
